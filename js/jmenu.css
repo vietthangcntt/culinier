@@ -1,0 +1,160 @@
+/* JMenu 1.0 RC1 | MIT License | https://github.com/jamesjohnson280/JMenu */
+
+
+/* Menu bar and fonts */
+.jmenu {
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+/* Menu Button */
+input.jm-menu-btn {
+  display: none; /* Hide the checkbox */
+}
+
+input[type='checkbox'].jm-menu-btn ~ .menu-left {
+  display: none; /* Hide menu on load */
+}
+input[type='checkbox'].jm-menu-btn ~ .menu-right {
+  display: none; /* Hide menu on load */
+}
+
+input[type='checkbox']:checked.jm-menu-btn ~ .menu-left  {
+  display: block; /* Open when menu button is clicked */
+}
+input[type='checkbox']:checked.jm-menu-btn ~ .menu-right  {
+  display: block; /* Open when menu button is clicked */
+}
+label.jm-menu-btn {
+  color: #959595; /* Light gray */
+  cursor: pointer;
+}
+
+label.jm-menu-btn:hover {
+  color: #fff;
+}
+
+
+/* Menu Items */
+.jmenu ul,
+.jmenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+.jmenu a {
+  color: #959595; /* Light gray */
+  display: inline-block;
+  color: white;
+  font-family:Dosis;
+  font-size:16px;
+  font-weight:bold;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.jmenu a:hover {
+  color: #fff; /* White */
+}
+
+/* Submenu Items */
+.jmenu ul ul {
+  display: none; /* Hidden by default */
+}
+
+.jm-icon-menu::before {
+  content: '\2630';
+  font-size: 35px;
+}
+
+@media (min-width: 768px) {
+  
+  /* Menu items */
+  .jmenu li {
+    display: inline-block;
+  }
+  
+  .jmenu a {
+    margin: 16px;
+  }
+  
+  /* Dropdowns */
+  .jm-dropdown {
+    position: relative;
+  }
+  
+  .jm-dropdown li a {
+    display: block;
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+  
+  .jm-dropdown ul {
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .5);
+    padding: 8px 0;
+    position: absolute;
+    min-width: 100%;
+  }
+  
+  /* Menu Button */
+  input.jm-menu-btn,
+  label.jm-menu-btn {
+    display: none; /* Hide menu button */
+  }
+  
+  input[type='checkbox'].jm-menu-btn ~ .menu-left
+    {
+    display: block; /* Show menu */
+  }
+  input[type='checkbox'].jm-menu-btn ~ .menu-right
+    {
+    display: block; /* Show menu */
+  }
+
+}
+@media only screen and (max-width: 1024px) {
+  .footer-down {
+    text-align: center;
+
+  }
+  .footer-menu ul {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+    .tall {
+      float: right;
+    }
+    .menu-list h1 {
+      text-align: -webkit-match-parent;
+
+    }
+  .tall .jmenu .menu-left {
+    float: none;
+  }
+  .tall .jmenu .menu-right {
+    float: none;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .jmenu ul {
+    margin-left: 30px;
+  }
+  .tall {
+    float: right;
+  } 
+}
+.tall {
+  margin-top: -47px;
+}
+.menu-left {
+  float: left;
+}
+.menu-right {
+  float: right;
+}
+h1 {
+  text-align: center;
+}
