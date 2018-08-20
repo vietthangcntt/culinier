@@ -12,17 +12,17 @@ input.jm-menu-btn {
   display: none; /* Hide the checkbox */
 }
 
-input[type='checkbox'].jm-menu-btn ~ .menu-left {
+input[type='checkbox'].jm-menu-btn ~ .header-menu-list .menu-left {
   display: none; /* Hide menu on load */
 }
-input[type='checkbox'].jm-menu-btn ~ .menu-right {
+input[type='checkbox'].jm-menu-btn ~ .header-menu-list .menu-right {
   display: none; /* Hide menu on load */
 }
 
-input[type='checkbox']:checked.jm-menu-btn ~ .menu-left  {
+input[type='checkbox']:checked.jm-menu-btn ~ .header-menu-list .menu-left  {
   display: block; /* Open when menu button is clicked */
 }
-input[type='checkbox']:checked.jm-menu-btn ~ .menu-right  {
+input[type='checkbox']:checked.jm-menu-btn ~ .header-menu-list .menu-right  {
   display: block; /* Open when menu button is clicked */
 }
 label.jm-menu-btn {
@@ -104,11 +104,11 @@ label.jm-menu-btn:hover {
     display: none; /* Hide menu button */
   }
   
-  input[type='checkbox'].jm-menu-btn ~ .menu-left
+  input[type='checkbox'].jm-menu-btn ~ .header-menu-list .menu-left
     {
     display: block; /* Show menu */
   }
-  input[type='checkbox'].jm-menu-btn ~ .menu-right
+  input[type='checkbox'].jm-menu-btn ~ .header-menu-list .menu-right
     {
     display: block; /* Show menu */
   }
@@ -131,20 +131,42 @@ label.jm-menu-btn:hover {
       text-align: -webkit-match-parent;
 
     }
-  .tall .jmenu .menu-left {
+  .tall .jmenu .header-menu-list .menu-left {
     float: none;
   }
-  .tall .jmenu .menu-right {
+  .tall .jmenu .header-menu-list .menu-right {
     float: none;
   }
 }
+@media only screen and (max-width: 991px) {
+  .menu-list h1 {
+    text-align: inherit;
+
+  }
+  .header-menu-list .menu-left {
+    float: right;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-menu-list {
+    position: absolute;
+    left: 22px;
+    margin-top: 10px;
+  }
+}
+
 @media only screen and (max-width: 414px) {
+  .header-menu-list {
+  position: absolute;
+  left: 0;
+  margin-top: 10px;
+  } 
   .jmenu ul {
     margin-left: 30px;
   }
   .tall {
     float: right;
-  } 
+  }
 }
 .tall {
   margin-top: -47px;
