@@ -44,15 +44,15 @@ label.jm-menu-btn:hover {
 }
 
 /* Links */
-.jmenu a {
-  color: #959595; /* Light gray */
+.jmenu a {/* Light gray */
   display: inline-block;
   color: white;
   font-family:Dosis;
   font-size:16px;
   font-weight:bold;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 9px;
+  display: block;
 }
 
 .jmenu a:hover {
@@ -69,7 +69,26 @@ label.jm-menu-btn:hover {
   font-size: 35px;
 }
 
-@media (min-width: 768px) {
+
+@media only screen and (max-width: 1024px) {
+  .footer-down {
+    text-align: center;
+
+  }
+  .footer-menu ul {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .menu-list h1 {
+    text-align: inherit;
+
+  }
+  .header-menu-list .menu-left {
+    float: right;
+  }
+}
+@media (min-width: 769px) {
   
   /* Menu items */
   .jmenu li {
@@ -114,15 +133,6 @@ label.jm-menu-btn:hover {
   }
 
 }
-@media only screen and (max-width: 1024px) {
-  .footer-down {
-    text-align: center;
-
-  }
-  .footer-menu ul {
-    padding-left: 0;
-  }
-}
 @media only screen and (max-width: 768px) {
     .tall {
       float: right;
@@ -137,33 +147,24 @@ label.jm-menu-btn:hover {
   .tall .jmenu .header-menu-list .menu-right {
     float: none;
   }
-}
-@media only screen and (max-width: 991px) {
-  .menu-list h1 {
-    text-align: inherit;
-
-  }
-  .header-menu-list .menu-left {
-    float: right;
-  }
-}
-@media only screen and (max-width: 768px) {
   .header-menu-list {
-    position: absolute;
-    left: 22px;
-    margin-top: 10px;
+  position: absolute;
+  left: 0;
+  background: gray;
+  margin-top: 18px;
+  } 
+  .jmenu a {
+    padding-left: 30px;
   }
+ 
 }
-
 @media only screen and (max-width: 414px) {
   .header-menu-list {
   position: absolute;
   left: 0;
-  margin-top: 10px;
+  margin-top: 18px;
+  width: 100%;
   } 
-  .jmenu ul {
-    margin-left: 30px;
-  }
   .tall {
     float: right;
   }
