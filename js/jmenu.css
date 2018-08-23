@@ -68,7 +68,12 @@ label.jm-menu-btn:hover {
   content: '\2630';
   font-size: 35px;
 }
-
+@media only screen and (max-width: 1200px) {
+  .content .container .row .col-md-8 .content-blog-comment .blog-list .blog-list-comment .comment-name input {
+    width: 100%;
+  
+  }
+} 
 
 @media only screen and (max-width: 1024px) {
   .footer-down {
@@ -77,6 +82,10 @@ label.jm-menu-btn:hover {
   }
   .footer-menu ul {
     padding-left: 0;
+  }
+  .content .container .row .col-md-8 .content-blog-comment .blog-list .blog-list-comment .comment-name input {
+    width: 100%;
+  
   }
 }
 @media only screen and (max-width: 991px) {
@@ -141,6 +150,9 @@ label.jm-menu-btn:hover {
       text-align: -webkit-match-parent;
 
     }
+    .content .container .row .col-md-8 .content-blog-comment .blog-list .blog-list-comment {
+    display: block;
+  }
   .tall .jmenu .header-menu-list .menu-left {
     float: none;
   }
