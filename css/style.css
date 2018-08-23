@@ -248,49 +248,55 @@ hr {
       font-weight: bold;
       color: #333333;
       text-align: center; }
-    .content .container .row .col-md-8 .content-comment .comment-blog .blog-left {
-      padding-left: 100px; }
-    .content .container .row .col-md-8 .content-comment .comment-blog .comment-list a {
-      float: left;
-      margin-right: 20px; }
-    .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top {
-      padding-top: 4px; }
-      .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-top-comment {
-        background-color: #f4f4f4;
-        margin-left: 50px;
-        padding: 10px 15px 11px 50px; }
-      .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment .comment-1 {
-        float: left; }
-      .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment .comment-2 {
-        float: right; }
-      .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment h4 {
-        font-family: raleway;
-        font-weight: bold;
-        font-size: 14px;
-        color: #333333; }
-        .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment h4 span {
+    .content .container .row .col-md-8 .content-comment .comment-blog {
+      padding-top: 30px; }
+      .content .container .row .col-md-8 .content-comment .comment-blog .blog-left {
+        padding-left: 100px; }
+      .content .container .row .col-md-8 .content-comment .comment-blog .comment-list a {
+        float: left;
+        margin-right: 20px; }
+      .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top {
+        padding-top: 10px; }
+        .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-top-comment {
+          background-color: #f4f4f4;
+          margin-left: 50px;
+          padding: 10px 15px 11px 50px; }
+        .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment {
+          padding-bottom: 40px; }
+          .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment .comment-1 {
+            float: left; }
+          .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment .comment-2 {
+            float: right; }
+          .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment h4 {
+            font-family: raleway;
+            font-weight: bold;
+            font-size: 14px;
+            color: #333333; }
+            .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment h4 span {
+              font-family: raleway;
+              font-weight: bold;
+              font-size: 11px;
+              color: #999999;
+              cursor: pointer; }
+          .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment p {
+            font-family: raleway;
+            font-weight: bold;
+            font-size: 11px;
+            color: #999999; }
+          .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment span {
+            font-family: raleway;
+            font-weight: bold;
+            font-size: 11px;
+            color: #2980b9;
+            cursor: pointer; }
+        .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top p {
           font-family: raleway;
-          font-weight: bold;
-          font-size: 11px;
-          color: #999999;
-          cursor: pointer; }
-      .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment p {
-        font-family: raleway;
-        font-weight: bold;
-        font-size: 11px;
-        color: #999999; }
-      .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-comment span {
-        font-family: raleway;
-        font-weight: bold;
-        font-size: 11px;
-        color: #2980b9;
-        cursor: pointer; }
-      .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top p {
-        font-family: raleway;
-        font-size: 13px;
-        color: #333333;
-        clear: right;
-        padding: 15px; }
+          font-size: 13px;
+          color: #333333;
+          clear: right;
+          border-top: 1px solid #f4f4f4;
+          padding: 15px;
+          margin-left: 137px; }
   .content .container .row .col-md-8 .content-blog-comment {
     background: #f4f4f4; }
     .content .container .row .col-md-8 .content-blog-comment .blog-comment {
