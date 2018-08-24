@@ -78,7 +78,7 @@ label.jm-menu-btn:hover {
 }
 @media only screen and (max-width: 1200px) {
   .content .container .row .col-md-8 .content-blog-comment .blog-list .blog-list-comment .comment-name input {
-    width: 100%;
+    width: 90%;
   
   }
 } 
@@ -87,6 +87,15 @@ label.jm-menu-btn:hover {
   .footer-down {
     text-align: center;
 
+  }
+  .content .container .row .col-md-8 .content-related .related-post .post-item .related-item .item-related p {
+    padding-left: 98px;
+  }
+  .content .container .row .col-md-8 .content-related .related-post .post-item-2 .related-item-2 .item-related-2 p {
+    padding-left: 98px;
+  }
+  .content .container .row .col-md-4 .sibar-top .sibar-tab .menu-tab li {
+    padding: 20px 21px 20px 21px;
   }
   .footer-menu ul {
     padding-left: 0;
@@ -157,6 +166,29 @@ label.jm-menu-btn:hover {
     .tall {
       float: right;
     }
+    .content .container .row .col-md-8 .content-list-blog .icon-list:before {
+      position: relative;
+    }
+    .content .container .row .col-md-8 .content-list-blog .icon-list:after {
+      position: relative;
+    }
+    .content .container .row .col-md-8 .content-blog-comment .blog-list .comment-footer {
+      display: block;
+      padding: 20px;
+    }
+    .content .container .row .col-md-4 .sibar .sibar-search {
+      margin: 0;
+    }
+    .footer-check {
+      padding-bottom: 15px;
+    }
+    .content .container .row .col-md-4 .sibar-top .sibar-tab .menu-tab li {
+      padding: 20px 92px 20px 93px;
+    }
+    .content .container .row .col-md-8 .content-blog-comment .blog-list .blog-list-comment .comment-name input {
+    width: 95%;
+  
+  }
     .menu-list h1 {
       text-align: -webkit-match-parent;
 
@@ -188,6 +220,18 @@ label.jm-menu-btn:hover {
   margin-top: 18px;
   width: 100%;
   }
+  .content .container .row .col-md-8 .content-related .related-post .post-item-2 .related-item-2 {
+    padding: 10px;
+  }
+  .content .container .row .col-md-8 .content-related .related-post .post-item .related-item {
+    padding: 10px;
+  }
+  .content .container .row .col-md-8 .content-blog h1 {
+    padding: 0;
+  }
+  .content .container .row .col-md-8 .content-blog .blog-icon {
+    padding: 0;
+  }
   .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top p {
     margin: 0;
   } 
@@ -198,10 +242,16 @@ label.jm-menu-btn:hover {
     float: none;
     width: auto;
 
+
+  }
+  .content .container .row .col-md-8 .content-comment .comment-blog .comment-list a {
+    float: none;
+    margin: 0;
   }
   .content .container .row .col-md-8 .content-related .related-post .post-item-2 {
     float: none;
     width: auto;
+    margin-top: 5px;
   }
   .content .container .row .col-md-8 .content-related {
     padding: 0;
@@ -218,6 +268,9 @@ label.jm-menu-btn:hover {
   .content .container .row .col-md-8 .content-comment .comment-blog .comment-list .list-top .list-top-comment {
     margin: 0;
     padding: 0;
+  }
+  .content .container .row .col-md-4 .sibar-top .sibar-tab .menu-tab li {
+    padding: 20px 36px 20px 37px;
   }
 }
 .tall {
@@ -236,4 +289,41 @@ h1 {
   .content .container .row .col-md-4 .sibar-adverti .adverti-picture .picture-sibar {
     padding-left: 80px;
   }
+  .content .container .row .col-md-4 .sibar-top .sibar-tab .menu-tab li {
+    padding: 20px 29px 20px 29px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .content .container .row .col-md-8 .content-related .related-post .post-item-2 .related-item-2 {
+    padding: 0;
+  }
+  .content .container .row .col-md-8 .content-related .related-post .post-item .related-item {
+    padding: 0;
+  }
 } 
+@media only screen and (max-width: 320px) {
+  .content .container .row .col-md-4 .sibar-top .sibar-tab .menu-tab li {
+    padding: 20px 20px 20px 21px;
+  }
+  .content .container .row .col-md-8 .content-related .related-post .post-item-2 .related-item-2 .item-related-2 p {
+    padding-left: 100px;
+  }
+  .content .container .row .col-md-8 .content-related .related-post .post-item .related-item .item-related p {
+    padding-left: 100px;
+  }
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:hover {background-color:#eeeeee;
+  cursor: pointer;
+}
+.active { background:#eeeeee;
+}

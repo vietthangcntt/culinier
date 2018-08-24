@@ -2,6 +2,14 @@ body {
 	font-size:14px;
 	margin:0 auto;
 }
+@font-face {
+font-family: Georgia;
+src:url('../fonts/georgia italic.ttf') format('truetype'),
+url('../fonts/Georgia Regular font.ttf') format('embedded-opentype'),
+url(‘../fonts/Captureit.woff’) format(‘woff’);
+font-weight:normal;
+ font-style:normal;
+}
 hr {
 	border-color: #666666;
 }
@@ -15,7 +23,7 @@ $white:#878787;
 #header {
 	.header-menu {
 		background: #232323;
-		padding: 10px;
+	    padding: 0 0 20px 0;
 		.container {
 			.menu-list {
 			}
@@ -75,13 +83,19 @@ $white:#878787;
 					font-weight:$font-weight;
 
 				}
-				a{
-					color: $color;
-					font-family:$font-family;
-					font-size:14px;
-					font-style:Italic;
-
+				.blog-menu {
+					a {
+						color: $color;
+					    font-family: Georgia;
+						font-size:14px;
+						font-style:Italic;
+					}
+					span {
+						margin: 3px;
+    					color: white;
+					}
 				}
+				
 			}
 		}
 	}
@@ -98,9 +112,8 @@ $white:#878787;
 						.icon-camera {
 							text-align: center;
 							padding: 10px;
-							i {
-								color: $color;
-								cursor: pointer;
+							img {
+								margin: 10px;
 
 							}
 							p {
@@ -168,10 +181,16 @@ $white:#878787;
 					}
 					ul {
 						list-style: none;
-						padding-top: 20px;
+						padding: 0;
+						span {
+								i {
+									font-size: 5px;
+									color: #999999;
+								}
+							}
 						li {
 							display: inline-block;
-							margin-left: 20px;
+							margin: 10px;
 							a {
 								font-family: $raleway;
 							    font-size: 12px;
@@ -180,6 +199,7 @@ $white:#878787;
 							    	margin-right: 5px;
 							    }
 							}
+
 
 						}
 					}
@@ -245,6 +265,10 @@ $white:#878787;
 								font-family: $raleway;
 							    font-size: 12px;
 							    color: $white;
+							    i {
+						    	    margin-right: 10px;
+							    }
+
 
 							}
 						}
@@ -323,8 +347,9 @@ $white:#878787;
 						}
 					.post-item {
 						background: #f4f4f4;
-					    width: 49%;
+					    width: 50%;
     					float: left;
+    					border-right: 2px solid white;
 					.related-item {
 						padding: 20px;
 						a {
@@ -356,6 +381,7 @@ $white:#878787;
 						background: #f4f4f4;
 					    width: 50%;
    						float: right;
+   						border-left: 2px solid white;
 					.related-item-2 {
 						padding: 20px;
 						a {
@@ -388,6 +414,7 @@ $white:#878787;
 				.content-comment {
 				    padding-bottom: 50px;
 			        border-top: 2px solid #f4f4f4;
+			        padding-top: 30px;
 					h3 {
 						font-size: 18px;
 						font-family: $raleway;
@@ -648,11 +675,8 @@ $white:#878787;
 						.icon-camera {
 							text-align: center;
 							padding: 10px;
-							i {
-								color: $color;
-								cursor: pointer;
-
-
+							img {
+								margin: 10px;
 							}
 							p {
 								color: $color;
@@ -672,7 +696,6 @@ $white:#878787;
 					}
 				}
 				.content-blog {
-					text-align: center;
 					a {
 						img {
 							max-width: 100%;
@@ -701,22 +724,6 @@ $white:#878787;
 					    font-size: 14px;
 					    color: #777777;
 					}
-					ul {
-						list-style: none;
-						li {
-							display: inline-block;
-							margin-left: 20px;
-							a {
-								font-family: raleway;
-							    font-size: 12px;
-							    color: #777777;
-							    i {
-							    	margin-right: 5px;
-							    }
-							}
-
-						}
-					}
 				}
 				.content-camera-3 {
 					padding-top: 40px;
@@ -725,10 +732,8 @@ $white:#878787;
 						.icon-camera {
 							text-align: center;
 							padding: 10px;
-							i {
-								color: $color;
-								cursor: pointer;
-
+							img {
+								margin: 10px;
 							}
 							p {
 								color: $color;
@@ -750,52 +755,6 @@ $white:#878787;
 						}
 						
 					}
-				}
-				.content-blog {
-					text-align: center;
-					a {
-						img {
-							max-width: 100%;
-						}
-					}
-					h3 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #f8a631;
-					}
-					h1 {
-						padding: 0 55px;
-						font-family: raleway;
-					    font-size: 36px;
-					    font-weight:$font-weight;
-					    color: #333333;
-					}
-					p {
-						font-family: raleway;
-					    font-size: 16px;
-					    color: #878787;
-					}
-					h5 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #777777;
-					}
-					ul {
-						list-style: none;
-						li {
-							display: inline-block;
-							margin-left: 20px;
-							a {
-								font-family: raleway;
-							    font-size: 12px;
-							    color: #777777;
-							    i {
-							    	margin-right: 5px;
-							    }
-							}
-
-						}
-					}
 				} 
 				.content-camera-4 {
 					padding-top: 40px;
@@ -804,10 +763,8 @@ $white:#878787;
 						.icon-camera {
 							text-align: center;
 							padding: 10px;
-							i {
-								color: $color;
-								cursor: pointer;
-
+							img {
+								margin: 10px;
 							}
 							p {
 								color: $color;
@@ -827,52 +784,6 @@ $white:#878787;
 						
 					}
 				}
-				.content-blog {
-					text-align: center;
-					a {
-						img {
-							max-width: 100%;
-						}
-					}
-					h3 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #f8a631;
-					}
-					h1 {
-						padding: 0 55px;
-						font-family: raleway;
-					    font-size: 36px;
-					    font-weight:$font-weight;
-					    color: #333333;
-					}
-					p {
-						font-family: raleway;
-					    font-size: 16px;
-					    color: #878787;
-					}
-					h5 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #777777;
-					}
-					ul {
-						list-style: none;
-						li {
-							display: inline-block;
-							margin-left: 20px;
-							a {
-								font-family: raleway;
-							    font-size: 12px;
-							    color: #777777;
-							    i {
-							    	margin-right: 5px;
-							    }
-							}
-
-						}
-					}
-				}
 				.content-camera-5 {
 					padding-top: 40px;
 					.header-camera {
@@ -880,10 +791,8 @@ $white:#878787;
 						.icon-camera {
 							text-align: center;
 							padding: 10px;
-							i {
-								color: $color;
-								cursor: pointer;
-
+							img {
+								margin: 10px;
 							}
 							p {
 								color: $color;
@@ -899,56 +808,6 @@ $white:#878787;
 						
 					}
 				}
-				.content-blog {
-					text-align: center;
-					.blog-media {
-						background: #f4f4f4;
-					    padding-top: 20px;
-					}
-					a {
-						img {
-							max-width: 100%;
-						}
-					}
-					h3 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #f8a631;
-					}
-					h1 {
-						padding: 0 55px;
-						font-family: raleway;
-					    font-size: 36px;
-					    font-weight:$font-weight;
-					    color: #333333;
-					}
-					p {
-						font-family: raleway;
-					    font-size: 16px;
-					    color: #878787;
-					}
-					h5 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #777777;
-					}
-					ul {
-						list-style: none;
-						li {
-							display: inline-block;
-							margin-left: 20px;
-							a {
-								font-family: raleway;
-							    font-size: 12px;
-							    color: #777777;
-							    i {
-							    	margin-right: 5px;
-							    }
-							}
-
-						}
-					}
-				}
 				.content-camera-6 {
 					padding-top: 40px;
 					.header-camera {
@@ -956,14 +815,11 @@ $white:#878787;
 						.icon-camera {
 							text-align: center;
 							padding: 10px;
-							i {
-								color: $color;
-								cursor: pointer;
-
+							img {
+								margin: 10px;
 							}
 							p {
 								color: $color;
-								font-family: raleway;
 								font-weight: $font-weight;
 								font-size: 12px;
 							}
@@ -974,14 +830,15 @@ $white:#878787;
 						margin-top: -20px;
 						h3 {
 							padding: 50px;
-							font-family: raleway;
-							font-weight: $font-weight;
+						    font-family: Georgia;
 							font-size: 30px;
 							color: $color;
 						}
 						p {
-							color: $color;
+							color: #999999;
 						    padding: 0px 0 50px 50px;
+						    font-family: raleway;
+						    font-size: 14px;
 						}
 						
 					}
@@ -993,10 +850,8 @@ $white:#878787;
 						.icon-camera {
 							text-align: center;
 							padding: 10px;
-							i {
-								color: $color;
-								cursor: pointer;
-
+							img {
+								margin: 10px;
 							}
 							p {
 								color: $color;
@@ -1012,52 +867,6 @@ $white:#878787;
 								max-width: 100%;
 								
 							}
-						}
-					}
-				}
-				.content-blog {
-					text-align: center;
-					a {
-						img {
-							max-width: 100%;
-						}
-					}
-					h3 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #f8a631;
-					}
-					h1 {
-						padding: 0 55px;
-						font-family: raleway;
-					    font-size: 36px;
-					    font-weight:$font-weight;
-					    color: #333333;
-					}
-					p {
-						font-family: raleway;
-					    font-size: 16px;
-					    color: #878787;
-					}
-					h5 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #777777;
-					}
-					ul {
-						list-style: none;
-						li {
-							display: inline-block;
-							margin-left: 20px;
-							a {
-								font-family: raleway;
-							    font-size: 12px;
-							    color: #777777;
-							    i {
-							    	margin-right: 5px;
-							    }
-							}
-
 						}
 					}
 				}
@@ -1068,10 +877,8 @@ $white:#878787;
 						.icon-camera {
 							text-align: center;
 							padding: 10px;
-							i {
-								color: $color;
-								cursor: pointer;
-
+							img {
+								margin: 10px;
 							}
 							p {
 								color: $color;
@@ -1090,52 +897,6 @@ $white:#878787;
 						}
 					}
 				}
-				.content-blog {
-					text-align: center;
-					a {
-						img {
-							max-width: 100%;
-						}
-					}
-					h3 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #f8a631;
-					}
-					h1 {
-						padding: 0 55px;
-						font-family: raleway;
-					    font-size: 36px;
-					    font-weight:$font-weight;
-					    color: #333333;
-					}
-					p {
-						font-family: raleway;
-					    font-size: 16px;
-					    color: #878787;
-					}
-					h5 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #777777;
-					}
-					ul {
-						list-style: none;
-						li {
-							display: inline-block;
-							margin-left: 20px;
-							a {
-								font-family: raleway;
-							    font-size: 12px;
-							    color: #777777;
-							    i {
-							    	margin-right: 5px;
-							    }
-							}
-
-						}
-					}
-				}
 				.content-camera-9 {
 					padding-top: 40px;
 					.header-camera {
@@ -1143,10 +904,8 @@ $white:#878787;
 						.icon-camera {
 							text-align: center;
 							padding: 10px;
-							i {
-								color: $color;
-								cursor: pointer;
-
+							img {
+								margin: 10px;
 							}
 							p {
 								color: $color;
@@ -1171,53 +930,8 @@ $white:#878787;
 				}
 				.content-blog {
 					.blog-media {
-						background: #f4f4f4;
-					    padding-top: 1px;
-					    padding-bottom: 30px;
-					}
-					text-align: center;
-					a {
-						img {
-							max-width: 100%;
-						}
-					}
-					h3 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #f8a631;
-					}
-					h1 {
-						padding: 0 55px;
-						font-family: raleway;
-					    font-size: 36px;
-					    font-weight:$font-weight;
-					    color: #333333;
-					}
-					p {
-						font-family: raleway;
-					    font-size: 16px;
-					    color: #878787;
-					}
-					h5 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #777777;
-					}
-					ul {
-						list-style: none;
-						li {
-							display: inline-block;
-							margin-left: 20px;
-							a {
-								font-family: raleway;
-							    font-size: 12px;
-							    color: #777777;
-							    i {
-							    	margin-right: 5px;
-							    }
-							}
-
-						}
+						background-color: #f4f4f4;
+						padding: 20px;
 					}
 				}
 				.content-camera-10 {
@@ -1227,10 +941,8 @@ $white:#878787;
 						.icon-camera {
 							text-align: center;
 							padding: 10px;
-							i {
-								color: $color;
-								cursor: pointer;
-
+							img {
+								margin: 10px;
 							}
 							p {
 								color: $color;
@@ -1252,58 +964,7 @@ $white:#878787;
 						}
 						
 					}
-				}
-				.content-blog {
-					.blog-media {
-						background: #f4f4f4;
-					    padding-top: 1px;
-					    padding-bottom: 30px;
-					}
-					text-align: center;
-					a {
-						img {
-							max-width: 100%;
-						}
-					}
-					h3 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #f8a631;
-					}
-					h1 {
-						padding: 0 55px;
-						font-family: raleway;
-					    font-size: 36px;
-					    font-weight:$font-weight;
-					    color: #333333;
-					}
-					p {
-						font-family: raleway;
-					    font-size: 16px;
-					    color: #878787;
-					}
-					h5 {
-						font-family: raleway;
-					    font-size: 14px;
-					    color: #777777;
-					}
-					ul {
-						list-style: none;
-						li {
-							display: inline-block;
-							margin-left: 20px;
-							a {
-								font-family: raleway;
-							    font-size: 12px;
-							    color: #777777;
-							    i {
-							    	margin-right: 5px;
-							    }
-							}
-
-						}
-					}
-				}    
+				}   
 			}
 			.col-md-4{
 				.sibar {
@@ -1346,22 +1007,43 @@ $white:#878787;
 					}
 				}
 				.sibar-top {
-					padding-top: 20px;
 				    background: #f4f4f4;
     				margin-top: 30px;
 					.sibar-tab {
-						a {
-							font-family: raleway;
-							font-size: 12px;
-							color: #333333;
-							font-weight: $font-weight; 
-							padding: 0 5px 0 36px;
+						.menu-tab {
+							padding: 0;
+							li {
+								list-style: none;
+							    float: left;
+							    background: #464442;
+							    padding: 20px 32px 20px 33px;
+								a {
+									font-family: raleway;
+									font-size: 12px;
+									color: $color;
+									font-weight: $font-weight; 
+
+								}
+								&:hover {
+									background: #f4f4f4;
+									a {
+							    		color: black;
+							    	}
+								}
+							}
+							.active {
+							    background: #f4f4f4;
+							    a {
+							    	color: black;
+							    }
+							}
 						}
 						ul {
 							list-style: none;
 							padding-left: 0;
 							padding-bottom: 30px;
-							margin-top: 20px;
+							padding-top: 20px;
+							clear: both;
 							li {
 						        padding: 1px 0px 0px 38px;
 								img {
@@ -1586,6 +1268,7 @@ $white:#878787;
 				}
 				a:hover:not(.active) {
 					background-color: #f8a631;
+					color: white;
 				}
 			}
 		}
